@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="jquery.inview.js"></script>
+<script type="text/javascript">
+var options = {
+	client_id: '', // Your instagram client ID
+	distance: 500, // max: 5000 = 5km
+	image_type: 'standard_resolution' // low_resolution (306px), thumbnail (150px), standard_resolution(612px)
+};
+</script>
+<script type="text/javascript" src="application.js"></script>
+<style>
+body {
+	text-align: center;
+}
+#loading {
+	margin: 40px 0;
+}
+</style>
+</head>
+<body>
+<h1>Instagr.am Fotos aus einem Umkreis von <span id="distance">0</span>m</h1>
+<noscript>(Aktiviere JavaScript!)</noscript>
+<div id="pics"></div>
+<div id="loading">Bitte warten … Lade …</div>
+</body>
+</html>
